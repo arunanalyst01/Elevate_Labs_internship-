@@ -1,8 +1,8 @@
-# 🧹 Data Cleaning & Preprocessing – Customer Dataset
+# Data Cleaning & Preprocessing – Customer Dataset
 This project focuses on cleaning and preprocessing a raw dataset as part of a data preparation task. The dataset contains common real-world issues such as missing values, duplicate records, inconsistent formatting, and mixed data types.
 
 The goal is to transform the raw data into a clean, structured dataset ready for analysis or visualization.
-## 🛠️ Tools Used
+##Tools Used
 
 - Python 
 - Pandas
