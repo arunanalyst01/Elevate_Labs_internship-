@@ -1,0 +1,57 @@
+# 🧹 Data Cleaning & Preprocessing – Customer Dataset
+This project focuses on cleaning and preprocessing a raw dataset as part of a data preparation task. The dataset contains common real-world issues such as missing values, duplicate records, inconsistent formatting, and mixed data types.
+
+The goal is to transform the raw data into a clean, structured dataset ready for analysis or visualization.
+## 🛠️ Tools Used
+
+- Python 
+- Pandas
+- Jupyter Notebook
+
+---
+
+## Cleaning Steps Performed
+
+1. Handled Missing Values 
+   - Identified columns with nulls using `.isnull().sum()`.
+   - Filled missing values in numeric columns with median values.
+   - Replaced missing text entries with a placeholder (e.g., `'Not specified'`).
+
+2. Removed Duplicates
+   - Used `.drop_duplicates()` to eliminate duplicate rows.
+
+3. Standardized Categorical Text  
+   - Normalized entries in columns like `gender` and `country` to ensure consistency.
+   - Examples: `'M' → 'male'`, `'f' → 'female'`, `'usa' → 'USA'`, etc.
+
+4. Date Format Normalization  
+   - Converted inconsistent date strings into `datetime` format using `pd.to_datetime()`.
+
+5. Renamed Columns  
+   - Cleaned up column headers by converting to lowercase and replacing spaces with underscores.
+
+6. Data Type Fixes
+   - Ensured correct data types: e.g., `age` as integer, `signup_date` as datetime.
+
+7.  Outlier Removal  
+   - Applied IQR filtering to remove outliers in numerical columns like `income`.
+
+---
+
+## Files Included
+
+- `raw_dataset.csv` – The original dataset (not uploaded publicly).
+- `cleaned_dataset.csv` – The final cleaned version ready for analysis.
+- `data_cleaning_script.py` – Python script used to clean the data.
+- `README.md` – Project documentation (this file).
+
+---
+
+## Learning Goals
+
+By completing this project, I gained experience in:
+- Identifying and addressing common data issues
+- Using Pandas for real-world data wrangling
+- Structuring a dataset for future analysis or modeling
+
+This project is part of my data analytics journey and will serve as a reference for future work.
