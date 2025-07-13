@@ -1,1 +1,4 @@
+# CLTV Prediction Project
 
+This project predicts Customer Lifetime Value (CLTV) using customer behavior data.
+It applies machine learning models such as XGBoostRegressor to support marketing and business decision-making.
